@@ -7,4 +7,6 @@
     <string name="password_label">Password</string>
     <string name="email_label">Email Address</string>
     <string name="continue_label">Continue</string>
+    <string name="name_label">Name</string>
+    <string name="yourpassion_label">Your Passion?</string>
 </resources>

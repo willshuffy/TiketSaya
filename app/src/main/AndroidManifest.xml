@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".GetStartedActivity" />
         <activity android:name=".SignInActivity" />
-        <activity android:name=".RegisterOneActivity"></activity>
+        <activity android:name=".RegisterOneActivity" />
+        <activity android:name=".RegisterTwoActivity"></activity>
     </application>
 
 </manifest>
