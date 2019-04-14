@@ -19,7 +19,8 @@
         <activity android:name=".GetStartedActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".RegisterOneActivity" />
-        <activity android:name=".RegisterTwoActivity"></activity>
+        <activity android:name=".RegisterTwoActivity" />
+        <activity android:name=".SuccessRegisterActivity"></activity>
     </application>
 
 </manifest>

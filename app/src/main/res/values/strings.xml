@@ -9,4 +9,5 @@
     <string name="continue_label">Continue</string>
     <string name="name_label">Name</string>
     <string name="yourpassion_label">Your Passion?</string>
+    <string name="explore">Explore now</string>
 </resources>
