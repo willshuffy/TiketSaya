@@ -12,4 +12,6 @@
     <string name="explore">Explore now</string>
     <string name="buy_ticket_label">BUY TICKET</string>
     <string name="pay_noe_label">Pay Now</string>
+    <string name="view_ticket">View Ticket</string>
+    <string name="my_dashboard">My Dashboard</string>
 </resources>
