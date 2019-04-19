@@ -20,7 +20,8 @@
         <activity android:name=".SignInActivity" />
         <activity android:name=".RegisterOneActivity" />
         <activity android:name=".RegisterTwoActivity" />
-        <activity android:name=".SuccessRegisterActivity"></activity>
+        <activity android:name=".SuccessRegisterActivity" />
+        <activity android:name=".HomeActivity"></activity>
     </application>
 
 </manifest>
