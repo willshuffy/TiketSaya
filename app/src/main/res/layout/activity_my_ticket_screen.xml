@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgPrimary"
-    tools:context=".TicketCheckoutActivity">
+    tools:context=".MyTicketScreenActivity">
 
     <View
         android:id="@+id/view"
@@ -26,7 +26,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16sp"
         android:fontFamily="@font/mregular"
-        android:text="Buy Ticket"
+        android:text="Ticket Details"
         android:textAlignment="center"
         android:textColor="#FFF"
         android:textSize="24sp"
@@ -40,41 +40,17 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/bg_layout_white"
         android:orientation="vertical"
-        android:paddingBottom="30dp"
+        android:paddingBottom="16dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
-        android:paddingTop="30dp"
+        android:paddingTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mregular"
-            android:text="Ticket Details"
-            android:textColor="@color/blackPrimary"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:fontFamily="@font/mlight"
-            android:text="Check the amount of tickets"
-            android:textColor="@color/grayPrimary"
-            android:textSize="16sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:background="#EDEDED" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,99 +91,23 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="11dp"
-                android:layout_marginLeft="40dp"
-                android:orientation="horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:background="@drawable/btnmines"
-                    android:layout_width="25dp"
-                    android:layout_height="35dp" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:text="2"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/mregular"
-                    android:textColor="@color/blackPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
                     android:layout_marginRight="12dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <Button
-                    android:background="@drawable/btnpls"
-                    android:layout_width="25dp"
-                    android:layout_height="28dp" />
-
+                    android:fontFamily="@font/mlight"
+                    android:text="2 Tickets"
+                    android:textColor="@color/bluePrimary"
+                    android:textSize="18sp" />
 
             </LinearLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/short_tos_ticket"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:fontFamily="@font/mlight"
-            android:lineSpacingExtra="8dp"
-            android:text="Anak yang berumur lebih dari 3 tahun wajib membeli tiket untuk masuk kedalam landmark"
-            android:textColor="@color/grayPrimary"
-            android:textSize="14sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bg_layout_white"
-        android:orientation="vertical"
-        android:paddingBottom="16dp"
-        android:paddingLeft="24dp"
-        android:paddingRight="24dp"
-        android:paddingTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mregular"
-            android:text="Pricing"
-            android:textColor="@color/blackPrimary"
-            android:textSize="20sp" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/mlight"
-                android:text="Your current balance is"
-                android:textColor="@color/grayPrimary"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_marginLeft="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/mmedium"
-                android:text="$ 150"
-                android:textColor="@color/bluePrimary"
-                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -219,34 +119,91 @@
             android:background="#EDEDED" />
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mregular"
+                android:text="Date"
+                android:textColor="@color/blackPrimary"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/mlight"
-                android:text="Total Price"
+                android:text="Apr 20 2019"
                 android:textColor="@color/grayPrimary"
                 android:textSize="16sp" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
             <TextView
-                android:layout_marginLeft="50dp"
-                android:textAlignment="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/mmedium"
-                android:text="$ 30"
-                android:textColor="@color/greenPrimary"
-                android:textSize="32sp" />
+                android:fontFamily="@font/mregular"
+                android:text="Time"
+                android:textColor="@color/blackPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/mlight"
+                android:text="10AM to 05PM"
+                android:textColor="@color/grayPrimary"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mregular"
+                android:text="Information"
+                android:textColor="@color/blackPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="8dp"
+                android:fontFamily="@font/mlight"
+                android:text="Anak yang berumur lebih dari 3 tahun wajib membeli tiket untuk masuk kedalam landmark"
+                android:textColor="@color/grayPrimary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_barcode"
+            android:layout_width="222dp"
+            android:layout_height="52dp" />
 
     </LinearLayout>
+
 
     <Button
         android:id="@+id/btn_pay_now"
@@ -257,11 +214,11 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/bg_btn_green_primary"
         android:fontFamily="@font/mmedium"
-        android:text="@string/pay_now_label"
+        android:text="@string/refund_now"
         android:textColor="#FFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <LinearLayout
         android:id="@+id/btn_back"
@@ -274,7 +231,7 @@
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toStartOf="@+id/btn_pay_now"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <ImageView
             android:layout_width="30dp"
@@ -282,5 +239,6 @@
             android:src="@drawable/ic_back" />
 
     </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>

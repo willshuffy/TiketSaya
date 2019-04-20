@@ -11,9 +11,10 @@
     <string name="yourpassion_label">Your Passion?</string>
     <string name="explore">Explore now</string>
     <string name="buy_ticket_label">BUY TICKET</string>
-    <string name="pay_noe_label">Pay Now</string>
+    <string name="pay_now_label">Pay Now</string>
     <string name="view_ticket">View Ticket</string>
     <string name="my_dashboard">My Dashboard</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="sign_out">Sign Out</string>
+    <string name="refund_now">Refund Now</string>
 </resources>
