@@ -24,7 +24,8 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".TiketDetailActivity" />
         <activity android:name=".TicketCheckoutActivity" />
-        <activity android:name=".SuccessBuyTicketActivity"></activity>
+        <activity android:name=".SuccessBuyTicketActivity" />
+        <activity android:name=".MyProfileActivity"></activity>
     </application>
 
 </manifest>

@@ -14,4 +14,6 @@
     <string name="pay_noe_label">Pay Now</string>
     <string name="view_ticket">View Ticket</string>
     <string name="my_dashboard">My Dashboard</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_out">Sign Out</string>
 </resources>

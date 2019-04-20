@@ -66,6 +66,7 @@
 
 
             <com.github.florent37.shapeofview.shapes.CircleView
+                android:id="@+id/btn_to_profile"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="29dp"
@@ -103,7 +104,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
-                android:fontFamily="@font/mmedium"
+                android:fontFamily="@font/mlight"
                 android:text="Traveller"
                 android:textColor="#FFF"
                 android:textSize="14sp"
