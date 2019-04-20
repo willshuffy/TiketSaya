@@ -26,7 +26,8 @@
         <activity android:name=".TicketCheckoutActivity" />
         <activity android:name=".SuccessBuyTicketActivity" />
         <activity android:name=".MyProfileActivity" />
-        <activity android:name=".MyTicketScreenActivity"></activity>
+        <activity android:name=".MyTicketScreenActivity" />
+        <activity android:name=".EditProfileActivity"></activity>
     </application>
 
 </manifest>

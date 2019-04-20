@@ -17,4 +17,5 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="sign_out">Sign Out</string>
     <string name="refund_now">Refund Now</string>
+    <string name="save_profile_label">Save Profile</string>
 </resources>
