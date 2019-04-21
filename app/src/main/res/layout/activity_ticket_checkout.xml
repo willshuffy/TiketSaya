@@ -122,11 +122,13 @@
                 android:layout_height="wrap_content">
 
                 <Button
+                    android:id="@+id/btnmines"
                     android:background="@drawable/btnmines"
                     android:layout_width="25dp"
                     android:layout_height="35dp" />
 
                 <TextView
+                    android:id="@+id/textjumlahticket"
                     android:text="2"
                     android:textSize="18sp"
                     android:fontFamily="@font/mregular"
@@ -137,6 +139,7 @@
                     android:layout_height="wrap_content" />
 
                 <Button
+                    android:id="@+id/btnplus"
                     android:background="@drawable/btnpls"
                     android:layout_width="25dp"
                     android:layout_height="28dp" />
@@ -200,6 +203,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/textmybalance"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -233,6 +237,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/texttotalharga"
                 android:layout_marginLeft="50dp"
                 android:textAlignment="center"
                 android:layout_width="wrap_content"
@@ -282,5 +287,16 @@
             android:src="@drawable/ic_back" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/allert_payment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/allert_payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 </android.support.constraint.ConstraintLayout>
