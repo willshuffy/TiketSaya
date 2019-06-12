@@ -388,6 +388,18 @@
                         android:layout_width="227dp"
                         android:layout_height="98dp" />
 
+                    <ImageView
+                        android:src="@drawable/item_one"
+                        android:layout_marginRight="24dp"
+                        android:layout_width="227dp"
+                        android:layout_height="98dp" />
+
+                    <ImageView
+                        android:src="@drawable/item_two"
+                        android:layout_marginRight="24dp"
+                        android:layout_width="227dp"
+                        android:layout_height="98dp" />
+
                 </LinearLayout>
 
             </HorizontalScrollView>
