@@ -70,6 +70,10 @@ public class RegisterTwoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                //ubah state pada button continue menjadi loading
+                btn_continue.setEnabled(false);
+                btn_continue.setText("Loading...");
+
                 //menyimpan ke Firebase
                 reference = FirebaseDatabase.getInstance().getReference()
                         .child("Users").child(usernmae_key_new);
