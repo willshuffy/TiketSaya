@@ -1,6 +1,7 @@
 package tiketsaya.willdev.com.tiketsaya;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,9 @@ public class SignInActivity extends AppCompatActivity {
     EditText xusername, xpassword;
 
     DatabaseReference reference;
+
+    String USERNAME_KEY = "usernamekey";
+    String usernmae_key = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +52,7 @@ public class SignInActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 final String username = xusername.getText().toString();
-                String password = xpassword.getText().toString();
+                final String password = xpassword.getText().toString();
 
                 reference = FirebaseDatabase.getInstance().getReference()
                         .child("Users").child(username);
@@ -57,12 +61,33 @@ public class SignInActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         if (dataSnapshot.exists()){
-                            Toast.makeText(getApplicationContext(), "Welcome " + username + "  ^_^", Toast.LENGTH_SHORT).show();
 
 
-                            //berpindah activity
-                            Intent gotohome = new Intent(SignInActivity.this,HomeActivity.class);
-                            startActivity(gotohome);
+                            //ambil data password dari firebase
+                            String passwordFromFirebase = dataSnapshot.child("password").getValue().toString();
+
+                            //validasi password dengan password firebase
+                            if (password.equals(passwordFromFirebase)){
+
+                                //simpan username (key) pada local
+                                SharedPreferences sharedPreferences = getSharedPreferences(USERNAME_KEY, MODE_PRIVATE);
+                                SharedPreferences.Editor editor = sharedPreferences.edit();
+                                editor.putString(usernmae_key, xusername.getText().toString());
+                                editor.apply();
+
+                                //Toast welcome saat berhasil login
+                                Toast.makeText(getApplicationContext(), "Welcome " + username + "  ^_^", Toast.LENGTH_SHORT).show();
+
+                                //berpindah activity saat berhasil login
+                                Intent gotohome = new Intent(SignInActivity.this,HomeActivity.class);
+                                startActivity(gotohome);
+                            }
+                            else {
+                                Toast.makeText(getApplicationContext(), "Password salah !", Toast.LENGTH_SHORT).show();
+                            }
+
+
+
 
                         }
                         else {
