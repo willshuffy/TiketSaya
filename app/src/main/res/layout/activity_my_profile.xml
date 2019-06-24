@@ -10,7 +10,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="310dp"
+        android:layout_height="@dimen/_230sdp"
         android:background="@drawable/bg_gradient_primary_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -19,13 +19,13 @@
 
     <View
         android:id="@+id/view2"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:background="@drawable/bg_view_circle_picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -34,21 +34,21 @@
 
 
     <com.github.florent37.shapeofview.shapes.CircleView
-        android:layout_width="95dp"
-        android:layout_height="95dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_24sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view">
 
         <ImageView
             android:id="@+id/photo_home_user"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
             android:src="@drawable/ic_willy" />
 
     </com.github.florent37.shapeofview.shapes.CircleView>
@@ -57,16 +57,16 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:fontFamily="@font/mmedium"
         android:text="Willy Saputra"
         android:textAlignment="center"
         android:textColor="#FFF"
-        android:textSize="24sp"
+        android:textSize="@dimen/_14sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
@@ -75,16 +75,16 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:fontFamily="@font/mlight"
         android:text="Traveller"
         android:textAlignment="center"
         android:textColor="#FFF"
-        android:textSize="20sp"
+        android:textSize="@dimen/_12sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -94,15 +94,15 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:background="@drawable/bg_layout_white"
         android:orientation="vertical"
-        android:paddingBottom="16dp"
-        android:paddingLeft="24dp"
-        android:paddingRight="24dp"
-        android:paddingTop="16dp"
+        android:paddingBottom="@dimen/_16sdp"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingTop="@dimen/_8sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,22 +114,22 @@
             android:fontFamily="@font/mregular"
             android:text="My Tickets"
             android:textColor="@color/blackPrimary"
-            android:textSize="20sp" />
+            android:textSize="@dimen/_14sdp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="@dimen/_1sdp"
             android:fontFamily="@font/mlight"
             android:text="Explore the beauty of world"
             android:textColor="@color/grayPrimary"
-            android:textSize="16sp" />
+            android:textSize="@dimen/_10sdp" />
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
             android:background="#EDEDED" />
 
         <LinearLayout
@@ -140,15 +140,15 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
                 android:src="@drawable/ic_ticket_buy" />
 
             <LinearLayout
-                android:layout_width="120dp"
+                android:layout_width="@dimen/_85sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="6dp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:orientation="vertical">
 
                 <TextView
@@ -158,35 +158,35 @@
                     android:fontFamily="@font/mregular"
                     android:text="Menara Pisa"
                     android:textColor="@color/blackPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/_10sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="@dimen/_2sdp"
                     android:fontFamily="@font/mlight"
                     android:text="Pisa City, Italy"
                     android:textColor="@color/grayPrimary"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/_8sdp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="17dp"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
                     android:fontFamily="@font/mlight"
                     android:text="2 Tickets"
                     android:textColor="@color/bluePrimary"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/_10sdp" />
 
             </LinearLayout>
 
@@ -195,18 +195,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
                 android:src="@drawable/ic_ticket_buy" />
 
             <LinearLayout
-                android:layout_width="120dp"
+                android:layout_width="@dimen/_85sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="6dp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:orientation="vertical">
 
                 <TextView
@@ -215,37 +216,35 @@
                     android:fontFamily="@font/mregular"
                     android:text="Borobudur"
                     android:textColor="@color/blackPrimary"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/_10sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="@dimen/_2sdp"
                     android:fontFamily="@font/mlight"
-                    android:text="Magelang"
+                    android:text="Yogya, Indonesia"
                     android:textColor="@color/grayPrimary"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/_8sdp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="17dp"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:orientation="horizontal">
-
-
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_1sdp"
                     android:fontFamily="@font/mlight"
-                    android:text="5 Tickets"
+                    android:text="1 Tickets"
                     android:textColor="@color/bluePrimary"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/_10sdp" />
 
             </LinearLayout>
 
@@ -256,17 +255,17 @@
     <Button
         android:id="@+id/btn_edit_profile"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_24sdp"
         android:background="@drawable/bg_btn_blue_primary"
         android:fontFamily="@font/mmedium"
         android:text="@string/edit_profile"
         android:textColor="#FFF"
-        android:textSize="20sp"
+        android:textSize="@dimen/_14sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -275,21 +274,21 @@
     <Button
         android:id="@+id/btn_my_dashboard"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_8sdp"
         android:background="@drawable/bg_btn_white_primary"
         android:fontFamily="@font/mmedium"
         android:text="@string/sign_out"
         android:textColor="#B9B9B9"
-        android:textSize="20sp"
+        android:textSize="@dimen/_14sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_view_ticket" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit_profile" />
 
 
 </android.support.constraint.ConstraintLayout>

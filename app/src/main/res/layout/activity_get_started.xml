@@ -30,11 +30,11 @@
 
     <ImageView
         android:id="@+id/emblemView"
-        android:layout_width="68dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="148dp"
+        android:layout_width="@dimen/_68sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginLeft="@dimen/_48sdp"
+        android:layout_marginStart="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_100sdp"
         android:src="@drawable/emblemwhite"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
