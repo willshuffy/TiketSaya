@@ -40,11 +40,12 @@
                 android:layout_marginRight="@dimen/_8sdp"
                 android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
                 android:fontFamily="@font/mregular"
                 android:text="My Dashboard"
                 android:textAlignment="center"
                 android:textColor="#FFF"
-                android:textSize="@dimen/_22sdp"
+                android:textSize="@dimen/_18sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.503"
                 app:layout_constraintStart_toStartOf="parent"
@@ -82,40 +83,42 @@
 
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/nama_lengkap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_12sdp"
                 android:layout_marginStart="@dimen/_16sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:fontFamily="@font/mmedium"
-                android:text="Willy Saputra"
+                android:text=""
                 android:textColor="#FFF"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/view2"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <TextView
+                android:id="@+id/bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/mlight"
-                android:text="Traveller"
+                android:text=""
                 android:textColor="#FFF"
                 android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@+id/view2"
-                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                app:layout_constraintTop_toBottomOf="@+id/nama_lengkap" />
 
             <TextView
+                android:id="@+id/user_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="36dp"
                 android:fontFamily="@font/mmedium"
-                android:text="$ 300"
+                android:text=""
                 android:textColor="@color/greenPrimary"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
