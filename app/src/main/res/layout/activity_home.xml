@@ -24,7 +24,7 @@
             <View
                 android:id="@+id/view"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_190sdp"
+                android:layout_height="@dimen/_230sdp"
                 android:background="@drawable/bg_gradient_primary_blue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -53,11 +53,11 @@
 
             <View
                 android:id="@+id/view2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="@dimen/_23sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_37sdp"
                 android:background="@drawable/bg_view_circle_picture"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -67,9 +67,9 @@
                 android:id="@+id/btn_to_profile"
                 android:layout_width="@dimen/_44sdp"
                 android:layout_height="@dimen/_44sdp"
-                android:layout_marginLeft="@dimen/_23sdp"
-                android:layout_marginStart="@dimen/_23sdp"
-                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_42sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3">
 
@@ -88,11 +88,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_12sdp"
                 android:layout_marginStart="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_44sdp"
                 android:fontFamily="@font/mmedium"
-                android:text=""
+                android:text="Nama User"
                 android:textColor="#FFF"
-                android:textSize="20sp"
+                android:textSize="@dimen/_15sdp"
                 app:layout_constraintStart_toEndOf="@+id/view2"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -101,12 +101,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="19dp"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/mlight"
-                android:text=""
+                android:text="Bio"
                 android:textColor="#FFF"
-                android:textSize="14sp"
+                android:textSize="@dimen/_11sdp"
                 app:layout_constraintStart_toEndOf="@+id/view2"
                 app:layout_constraintTop_toBottomOf="@+id/nama_lengkap" />
 
@@ -116,9 +116,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="60dp"
                 android:fontFamily="@font/mmedium"
-                android:text=""
+                android:text="Saldo"
                 android:textColor="@color/greenPrimary"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_24sdp"
                 android:layout_marginStart="@dimen/_24sdp"
-                android:layout_marginTop="@dimen/_85sdp"
+                android:layout_marginTop="@dimen/_120sdp"
                 android:background="@drawable/bg_layout_white"
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/_16sdp"
@@ -148,28 +148,28 @@
                     android:fontFamily="@font/mregular"
                     android:text="Main Menus"
                     android:textColor="@color/blackPrimary"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
                     android:fontFamily="@font/mlight"
                     android:text="Explore the beauty of world"
                     android:textColor="@color/grayPrimary"
-                    android:textSize="@dimen/_14sdp" />
+                    android:textSize="@dimen/_11sdp" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="@dimen/_25sdp"
-                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_11sdp"
                     android:background="#EDEDED" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_14sdp"
                     android:orientation="horizontal"
                     android:weightSum="3">
 
